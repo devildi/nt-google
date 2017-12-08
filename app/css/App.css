@@ -29,7 +29,7 @@ body{
 	top: 0;
 	left: 0;
 	right:0;
-	z-index: 10000;
+	z-index: 10;
 	background: rgba(0, 0, 0, 0) linear-gradient(to bottom, #086ed5, #055db5) repeat scroll 0 0;
   border-bottom: 1px solid #044e97;
   border-top: none;
@@ -59,6 +59,7 @@ body{
 	z-index: 12000;
 	background-color: #e7e7e7;
 	transition: right 0.5s;
+	overflow: auto;
 }
 .topbar{
 	top:0;
@@ -171,4 +172,19 @@ span {
 }
 .btnRight {
 	float: right;
+}
+::-webkit-scrollbar{
+  display:none;
+}
+.loading {
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 100;
+	margin: auto;
+	background: url(https://res.cloudinary.com/dnfhsjz8u/image/upload/v1503192215/Rolling_o7dnbb.gif)
 }

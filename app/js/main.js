@@ -10,4 +10,9 @@ $(function(){
 		e.stopPropagation()
 		sidebar.css('right',-250)
 	})
+	$('.wel_top1').on('click', function(e){
+		e.preventDefault()
+		e.stopPropagation()
+		sidebar.css('right',-250)
+	})
 })
