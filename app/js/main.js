@@ -15,4 +15,10 @@ $(function(){
 		e.stopPropagation()
 		sidebar.css('right',-250)
 	})
+	$('.wel_top1_right1').on('click', function(e){
+		e.preventDefault()
+		e.stopPropagation()
+		window.localStorage.setItem('area', 'china')
+		window.location.href = '/api/gaode'
+	})
 })
